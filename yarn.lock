@@ -27,11 +27,40 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
+"@babel/core@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.1.2.tgz#f8d2a9ceb6832887329a7b60f9d035791400ba4e"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/generator" "^7.1.2"
+    "@babel/helpers" "^7.1.2"
+    "@babel/parser" "^7.1.2"
+    "@babel/template" "^7.1.2"
+    "@babel/traverse" "^7.1.0"
+    "@babel/types" "^7.1.2"
+    convert-source-map "^1.1.0"
+    debug "^3.1.0"
+    json5 "^0.5.0"
+    lodash "^4.17.10"
+    resolve "^1.3.2"
+    semver "^5.4.1"
+    source-map "^0.5.0"
+
 "@babel/generator@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.0.0.tgz#1efd58bffa951dc846449e58ce3a1d7f02d393aa"
   dependencies:
     "@babel/types" "^7.0.0"
+    jsesc "^2.5.1"
+    lodash "^4.17.10"
+    source-map "^0.5.0"
+    trim-right "^1.0.1"
+
+"@babel/generator@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.1.2.tgz#fde75c072575ce7abbd97322e8fef5bae67e4630"
+  dependencies:
+    "@babel/types" "^7.1.2"
     jsesc "^2.5.1"
     lodash "^4.17.10"
     source-map "^0.5.0"
@@ -188,6 +217,14 @@
     "@babel/traverse" "^7.1.0"
     "@babel/types" "^7.0.0"
 
+"@babel/helpers@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.1.2.tgz#ab752e8c35ef7d39987df4e8586c63b8846234b5"
+  dependencies:
+    "@babel/template" "^7.1.2"
+    "@babel/traverse" "^7.1.0"
+    "@babel/types" "^7.1.2"
+
 "@babel/highlight@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0.tgz#f710c38c8d458e6dd9a201afb637fcb781ce99e4"
@@ -199,6 +236,10 @@
 "@babel/parser@^7.0.0", "@babel/parser@^7.1.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.1.0.tgz#a7cd42cb3c12aec52e24375189a47b39759b783e"
+
+"@babel/parser@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.1.2.tgz#85c5c47af6d244fab77bce6b9bd830e38c978409"
 
 "@babel/plugin-external-helpers@^7.0.0":
   version "7.0.0"
@@ -516,6 +557,14 @@
     "@babel/parser" "^7.1.0"
     "@babel/types" "^7.0.0"
 
+"@babel/template@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.1.2.tgz#090484a574fef5a2d2d7726a674eceda5c5b5644"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/parser" "^7.1.2"
+    "@babel/types" "^7.1.2"
+
 "@babel/traverse@^7.0.0", "@babel/traverse@^7.1.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.1.0.tgz#503ec6669387efd182c3888c4eec07bcc45d91b2"
@@ -533,6 +582,14 @@
 "@babel/types@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0.tgz#6e191793d3c854d19c6749989e3bc55f0e962118"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.10"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.1.2.tgz#183e7952cf6691628afdc2e2b90d03240bac80c0"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.10"
@@ -813,6 +870,10 @@ babel-core@^6.0.0, babel-core@^6.26.0, babel-core@^6.7.2:
     private "^0.1.8"
     slash "^1.0.0"
     source-map "^0.5.7"
+
+babel-core@^7.0.0-bridge.0:
+  version "7.0.0-bridge.0"
+  resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-7.0.0-bridge.0.tgz#95a492ddd90f9b4e9a4a1da14eb335b87b634ece"
 
 babel-generator@^6.18.0, babel-generator@^6.26.0:
   version "6.26.1"
@@ -3333,6 +3394,15 @@ metro-cache@0.45.6:
     mkdirp "^0.5.1"
     rimraf "^2.5.4"
 
+metro-cache@0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/metro-cache/-/metro-cache-0.47.0.tgz#7f326f4118a9815383a3126658ea4aef32dfdffc"
+  dependencies:
+    jest-serializer "23.0.1"
+    metro-core "0.47.0"
+    mkdirp "^0.5.1"
+    rimraf "^2.5.4"
+
 metro-config@0.45.6:
   version "0.45.6"
   resolved "https://registry.yarnpkg.com/metro-config/-/metro-config-0.45.6.tgz#f08472ea8c4807bd23263c42948019a9a4f34ada"
@@ -3341,6 +3411,16 @@ metro-config@0.45.6:
     metro "0.45.6"
     metro-cache "0.45.6"
     metro-core "0.45.6"
+
+metro-config@0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/metro-config/-/metro-config-0.47.0.tgz#52e045847680d85d74753ddbd9e2cc2bda5a4402"
+  dependencies:
+    cosmiconfig "^5.0.5"
+    metro "0.47.0"
+    metro-cache "0.47.0"
+    metro-core "0.47.0"
+    pretty-format "^23.4.1"
 
 metro-core@0.45.6, metro-core@^0.45.6:
   version "0.45.6"
@@ -3351,6 +3431,15 @@ metro-core@0.45.6, metro-core@^0.45.6:
     metro-resolver "0.45.6"
     wordwrap "^1.0.0"
 
+metro-core@0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.47.0.tgz#54a98c97bef8cad17820062216542a24521bbeb1"
+  dependencies:
+    jest-haste-map "23.5.0"
+    lodash.throttle "^4.1.1"
+    metro-resolver "0.47.0"
+    wordwrap "^1.0.0"
+
 metro-memory-fs@^0.45.6:
   version "0.45.6"
   resolved "https://registry.yarnpkg.com/metro-memory-fs/-/metro-memory-fs-0.45.6.tgz#9a1fffbde2744b0a0a1d6fcd16f7cb43508f8d7b"
@@ -3358,6 +3447,12 @@ metro-memory-fs@^0.45.6:
 metro-minify-uglify@0.45.6:
   version "0.45.6"
   resolved "https://registry.yarnpkg.com/metro-minify-uglify/-/metro-minify-uglify-0.45.6.tgz#72cd952371a50b9204fd89d89e8041640237b7c1"
+  dependencies:
+    uglify-es "^3.1.9"
+
+metro-minify-uglify@0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/metro-minify-uglify/-/metro-minify-uglify-0.47.0.tgz#2e4cee86225c9debe456efbf3d12b6e9da8cd8c6"
   dependencies:
     uglify-es "^3.1.9"
 
@@ -3446,9 +3541,21 @@ metro-resolver@0.45.6:
   dependencies:
     absolute-path "^0.0.0"
 
+metro-resolver@0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.47.0.tgz#d5a64337c57cb76d0699050ff01439a0ba100b82"
+  dependencies:
+    absolute-path "^0.0.0"
+
 metro-source-map@0.45.6:
   version "0.45.6"
   resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.45.6.tgz#49b20bbbc8f047ede7546b6721ab0214a1ad360d"
+  dependencies:
+    source-map "^0.5.6"
+
+metro-source-map@0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.47.0.tgz#7b9eddc8e054d1fe6543e645cbf94842f8d7454f"
   dependencies:
     source-map "^0.5.6"
 
@@ -3489,6 +3596,60 @@ metro@0.45.6, metro@^0.45.6:
     metro-react-native-babel-preset "0.45.6"
     metro-resolver "0.45.6"
     metro-source-map "0.45.6"
+    mime-types "2.1.11"
+    mkdirp "^0.5.1"
+    node-fetch "^2.2.0"
+    nullthrows "^1.1.0"
+    react-transform-hmr "^1.0.4"
+    resolve "^1.5.0"
+    rimraf "^2.5.4"
+    serialize-error "^2.1.0"
+    source-map "^0.5.6"
+    temp "0.8.3"
+    throat "^4.1.0"
+    wordwrap "^1.0.0"
+    write-file-atomic "^1.2.0"
+    ws "^1.1.0"
+    xpipe "^1.0.5"
+    yargs "^9.0.0"
+
+metro@0.47.0, metro@^0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/metro/-/metro-0.47.0.tgz#291ccd2493b2013d5bc49eaa2feb55d61b9d4532"
+  dependencies:
+    "@babel/core" "^7.0.0"
+    "@babel/generator" "^7.0.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/plugin-external-helpers" "^7.0.0"
+    "@babel/template" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    absolute-path "^0.0.0"
+    async "^2.4.0"
+    babel-preset-fbjs "2.3.0"
+    chalk "^1.1.1"
+    concat-stream "^1.6.0"
+    connect "^3.6.5"
+    debug "^2.2.0"
+    denodeify "^1.2.1"
+    eventemitter3 "^3.0.0"
+    fbjs "0.8.17"
+    fs-extra "^1.0.0"
+    graceful-fs "^4.1.3"
+    image-size "^0.6.0"
+    jest-docblock "23.2.0"
+    jest-haste-map "23.5.0"
+    jest-worker "23.2.0"
+    json-stable-stringify "^1.0.1"
+    lodash.throttle "^4.1.1"
+    merge-stream "^1.0.1"
+    metro-cache "0.47.0"
+    metro-config "0.47.0"
+    metro-core "0.47.0"
+    metro-minify-uglify "0.47.0"
+    metro-react-native-babel-preset "0.47.0"
+    metro-resolver "0.47.0"
+    metro-source-map "0.47.0"
     mime-types "2.1.11"
     mkdirp "^0.5.1"
     node-fetch "^2.2.0"
@@ -4110,7 +4271,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-pretty-format@^23.6.0:
+pretty-format@^23.4.1, pretty-format@^23.6.0:
   version "23.6.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-23.6.0.tgz#5eaac8eeb6b33b987b7fe6097ea6a8a146ab5760"
   dependencies:
