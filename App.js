@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
 import {Text, Container, Item, Label, Input, Button} from 'native-base';
 
@@ -35,7 +27,9 @@ export default class App extends Component {
           </Item>
           <Button
             block={true}
-            onPress={() => alert(JSON.stringify(this.state))}
+            onPress={() => alert(JSON.stringify({
+              state: this.state,
+            }))}
           >
             <Text>Show state</Text>
           </Button>
